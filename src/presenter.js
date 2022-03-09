@@ -6,6 +6,7 @@ const form = document.querySelector("#ventas-form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const cantidad_2 = cantidad_1.value;
-  div.innerHTML = "<p>" + cantidad_2 + "</p>";
+  const precio_2 = precio_1.value;
+  div.innerHTML = "<p>" + cantidad_2 +"&nbsp"+ precio_2 + "</p>";
 
 });
