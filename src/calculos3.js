@@ -17,6 +17,10 @@ function porcentaje_Descuento(a)
     {
        resp = 10;
     }
+    if(a >= 30000 )
+    {
+       resp = 15;
+    }
     return resp;
 }
 
