@@ -28,7 +28,5 @@ form.addEventListener("submit", (event) => {
   div_2.innerHTML = "<p>" + "Impuesto para: " + estados_2 + "(%" + porcentaje_Impuesto(estados_2) + "):" +
    "&nbsp" + impuesto + "</p>";
   div_3.innerHTML = "<p>" + "Descuento (" +  porcentaje_Descuento(precio_Neto) + " %): " +  descuento + "</p>"; 
-  div_4.innerHTML = "<p>" + "Calcular el Precio Total"+ total(precio_Neto,descuento,impuesto) + "</p>"
-
-
+  div_4.innerHTML = "<p>" + "Calcular el Precio Total: "+ "$" + total(precio_Neto,descuento,impuesto) + "</p>"
 });
