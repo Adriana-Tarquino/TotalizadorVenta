@@ -17,6 +17,10 @@ function calcular_Impuesto(precio,estadoImpuesto,nombreEstado)
     {
         resp = precio * (estadoImpuesto/100);
     }
+    if(nombreEstado = "UT")
+    {
+        resp = precio * (estadoImpuesto/100);
+    }
     return resp;
 }
 
