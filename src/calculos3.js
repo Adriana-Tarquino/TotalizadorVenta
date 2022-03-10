@@ -12,8 +12,11 @@ function porcentaje_Descuento(a)
     if(a >= 7000 && a < 10000 )
     {
        resp = 7;
+    } 
+    if(a >= 10000 && a < 30000 )
+    {
+       resp = 10;
     }
-       
     return resp;
 }
 
