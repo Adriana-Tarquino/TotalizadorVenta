@@ -13,6 +13,10 @@ function calcular_Impuesto(precio,estadoImpuesto,nombreEstado)
     {
         resp = precio * (estadoImpuesto/100);
     }
+    if(nombreEstado = "NV")
+    {
+        resp = precio * (estadoImpuesto/100);
+    }
     return resp;
 }
 
