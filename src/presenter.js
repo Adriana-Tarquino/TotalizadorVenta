@@ -1,7 +1,7 @@
 import porcentaje_Impuesto from "./calculos";
 import calcular_Impuesto from "./calculos2";
 import porcentaje_Descuento from "./calculos3";
-
+import calcular_Descuento from "./calculos4";
 
 const cantidad_1 = document.querySelector("#cantidad");
 const precio_1 = document.querySelector("#precio");
@@ -20,6 +20,10 @@ form.addEventListener("submit", (event) => {
   //div.innerHTML = "<p>" + cantidad_2 +"&nbsp"+ precio_2 + "&nbsp" + estados_2 + "&nbsp" + porcentaje_Impuesto(estados_2) +  "</p>";
   div.innerHTML = "<p>" + "Precio neto ("+ cantidad_2 + "*" + "$" + precio_2 + ") :" + "&nbsp" + "$"  + precio_Neto + "</p>";
   div_2.innerHTML = "<p>" + "Impuesto para: " + estados_2 + "(%" + porcentaje_Impuesto(estados_2) + "):" +
-   "&nbsp" + calcular_Impuesto(precio_Neto, porcentaje_Impuesto(estados_2), estados_2) + "</p>";  
-   div_3.innerHTML = "<p>" + "Descuento (" +  porcentaje_Descuento(precio_Neto) + " %): " + "</p>";
+   "&nbsp" + calcular_Impuesto(precio_Neto, porcentaje_Impuesto(estados_2), estados_2) + "</p>";
+   div_3.innerHTML = "<p>" + "Descuento (" +  porcentaje_Descuento(precio_Neto) + " %): " + 
+    calcular_Descuento(precio_Neto,porcentaje_Descuento(precio_Neto)) + "</p>"; 
+
+
+
 });
