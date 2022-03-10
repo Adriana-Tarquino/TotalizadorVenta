@@ -19,7 +19,9 @@ function porcentaje_Impuesto(e){
         default:
             break;
     }
-    return resp + "%";
+    return resp;
 }
 
 export default porcentaje_Impuesto;
+
+
