@@ -8,7 +8,7 @@ function porcentaje_Impuesto(e){
             resp = 8.00;
             break;
         case "TX":
-            resp =6.25;
+            resp = 6.25;
             break;
         case "AL":
             resp = 4.00;
