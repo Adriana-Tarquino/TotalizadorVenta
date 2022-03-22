@@ -7,4 +7,9 @@ describe("Porcentaje de Descuento", () => {
        var resp = calcular_Descuento(1000,desc);
        expect(resp).toEqual(30);
     });
+    it("deberia mostrar error al calcular el descuento ", () => {
+        var desc = porcentaje_Descuento(1000);
+        var resp = calcular_Descuento(1000,desc);
+        expect(resp).toEqual(0.3);
+     });
 });
