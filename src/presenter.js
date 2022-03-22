@@ -20,7 +20,7 @@ form.addEventListener("submit", (event) => {
   const precio_2 = precio_1.value;
   const estados_2 = estados_1.value;
   const precio_Neto = cantidad_2 *precio_2;
-  const impuesto =  calcular_Impuesto(precio_Neto, porcentaje_Impuesto(estados_2));
+  const impuesto =  calcular_Impuesto(precio_Neto, porcentaje_Impuesto(estados_2),estados_2);
   const descuento =  calcular_Descuento(precio_Neto,porcentaje_Descuento(precio_Neto));
   
   //div.innerHTML = "<p>" + cantidad_2 +"&nbsp"+ precio_2 + "&nbsp" + estados_2 + "&nbsp" + porcentaje_Impuesto(estados_2) +  "</p>";
