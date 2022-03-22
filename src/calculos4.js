@@ -5,5 +5,4 @@ function calcular_Descuento(precio,descuento)
     return resp;
 }
 
-3
 export default calcular_Descuento;

@@ -1,8 +1,10 @@
 import calcular_Descuento from "./calculos4";
+import porcentaje_Descuento from "./calculos3";
 
 describe("Porcentaje de Descuento", () => {
     it("Deberia calcular el descuento", () => {
-       var resp = calcular_Descuento(10,3);
-       expect(resp).toEqual(0.3);
+       var desc = porcentaje_Descuento(1000);
+       var resp = calcular_Descuento(1000,desc);
+       expect(resp).toEqual(30);
     });
 });
